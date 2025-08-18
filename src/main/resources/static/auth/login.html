@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <title>My To-do List - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-1">
+        <h1 class="list-title">To-Do List</h1>
+        <h4>Your daily sidekick for getting stuff done</h4>
+      </div>
+      <div class="section-2">
+        <div class="form-container">
+          <h2 class="login-title">Login To Your Account</h2>
+          <form action="#" id="login-form">
+            <div class="input-group">
+              <input type="email" id="email" placeholder="Email" />
+              <span id="login-email-error" class="error"></span>
+            </div>
+            <div class="input-group">
+              <input type="password" id="password" placeholder="Password" />
+              <span id="login-pswd-error" class="error"></span>
+            </div>
+            <div class="submit-btn" id="login-btn">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-div">
+          <p class="sign-link">
+            Don't have an account? <a id="sign">Sign Up</a>
+          </p>
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="form-container">
+          <h2 class="login-title">Create Your Account</h2>
+          <form action="#" id="sign-up-form">
+            <div class="input-group">
+              <input type="email" id="sign-email" placeholder="Email" />
+              <span id="signup-email-error" class="error"></span>
+            </div>
+
+            <div class="input-group">
+              <input type="text" id="fullName" placeholder="Full Name" />
+              <span id="signup-name-error" class="error"></span>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="sign-password"
+                placeholder="Password"
+              />
+              <span id="signup-pswd-error" class="error"></span>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+              />
+              <span id="signup-confirm-error" class="error"></span>
+            </div>
+            <div class="submit-btn" id="sign-btn">
+              <button type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="sign-div">
+          <p class="sign-link">
+            Already have an account? <a id="login">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

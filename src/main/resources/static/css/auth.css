@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  height: 100vh;
+}
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #3498db;
+  color: whitesmoke;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1c7ed6;
+}
+
+.input-group {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(226, 225, 225);
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus-visible {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(38, 93, 241, 0.548);
+}
+
+.input-group label {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn button {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #1971c2;
+  color: whitesmoke;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+
+.submit-btn button:hover {
+  background-color: #1864ab;
+}
+
+.form-container {
+  /* border: 2px solid black; */
+  padding: 80px 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sign-link {
+  color: rgb(104, 103, 103);
+  font-size: 18px;
+}
+
+.sign-link a {
+  text-decoration: none;
+  color: #1c7ed6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sign-link a:hover {
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 5px;
+}

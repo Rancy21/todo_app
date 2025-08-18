@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  background-color: #3498db; /* Or any color you prefer */
+  padding: 10px; /* Centers the title */ /* Adds some spacing below the nav */
+}
+
+nav h1 {
+  margin: 0; /* Removes default h1 margins */
+  color: white; /* Or any color that contrasts with the background */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(39, 38, 38); /* Or Open Sans, Lato */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 38, 38);
+}
+.list-element {
+  margin: 10px;
+  width: 500px;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 15px;
+  align-items: center;
+  /*background-color: rgba(122, 183, 237, 0.855);*/
+  border: 6px, solid, rgb(71, 132, 193);
+}
+
+.list-element:hover {
+  background-color: rgba(122, 183, 237, 0.855);
+}
+
+.delete-button {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: xx-large;
+  color: grey;
+}
+
+.delete-button:hover {
+  color: red;
+}
+
+.task-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 90%;
+}
+
+.list-container {
+  height: 70%;
+  margin-top: 20px;
+}
+.list-title {
+  font-size: 60px;
+}
+.task-title {
+  flex-grow: 1;
+  text-wrap: wrap;
+  max-width: 100%;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  appearance: none; /* Remove default checkbox */
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  background-color: #3498db;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:focus,
+input[type="text"]:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+.task-field {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  font-weight: 500;
+  background-color: rgb(91, 89, 89);
+  border-radius: 20px;
+  flex-grow: 1;
+  resize: none;
+}
+
+.task-field:focus {
+  outline: none;
+}
+
+.add-button {
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #3498db;
+  cursor: pointer;
+  height: 100%;
+}
+
+.add-button:active {
+  background-color: #35688a;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  background-color: rgb(91, 89, 89);
+  margin: 10px 0;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.list-element {
+  cursor: pointer;
+}
+.list-element .task-content input,
+.list-element .delete-button {
+  cursor: default;
+}
