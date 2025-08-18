@@ -200,7 +200,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Author
 
-**Larry** - Full Stack Developer
+**Larryck** - Full Stack Developer
 
 ## 🐛 Known Issues
 
